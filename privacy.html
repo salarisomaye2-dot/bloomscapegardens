@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomscape Gardens - Modern Landscaping & Floral Design</title>
+  <meta name="description" content="Bloomscape Gardens offers premium landscaping, floral design, garden maintenance, and irrigation systems in New York, USA.">
+  <link rel="icon" href="favicon.ico">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --color-primary: hsl(142, 69%, 39%);
+      --color-primary-light: hsl(141, 58%, 59%);
+      --color-primary-dark: hsl(142, 69%, 24%);
+      --color-accent: hsl(332, 68%, 54%);
+      --color-surface: hsl(0, 0%, 99%);
+      --color-text: hsl(0, 0%, 15%);
+      --border-radius: 8px;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: var(--color-text);
+      background-color: var(--color-surface);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--border-radius);
+      font-weight: 700;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .compact-section {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    /* Hero gradient background */
+    .hero-gradient {
+      background: radial-gradient(circle at center, var(--color-primary-light) 0%, var(--color-primary) 100%);
+    }
+
+    /* Card style with accent border & hover */
+    .card-border-left-accent {
+      border-left: 4px solid var(--color-accent);
+      border-radius: var(--border-radius);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-border-left-accent:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Lighter shadow on hover */
+    }
+
+    /* Image hover effect */
+    .img-hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: var(--border-radius);
+    }
+
+    .img-hover-effect:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(var(--color-primary-dark-rgb), 0.3); /* Subtle color tint shadow */
+    }
+
+    /* For icon containers - directly coloring the icon */
+    .icon-style {
+      color: var(--color-primary); /* Default icon color */
+      font-size: 2.5rem; /* Or adjust based on desired size */
+    }
+
+    /* For footer background for contrast */
+    .footer-bg {
+      background-color: #212529; /* Dark background */
+      color: #ffffff; /* Light text */
+    }
+
+    /* Accessibility: Reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      .card-border-left-accent, .img-hover-effect, .btn-primary {
+        transition-duration: 0.001ms !important;
+        transition-property: all !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="bg-white shadow-sm py-4">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+        <a href="#" class="text-2xl font-bold text-gray-800 mb-2 md:mb-0">Bloomscape Gardens</a>
+        <button class="md:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none" aria-label="Toggle navigation" onclick="document.getElementById('navbar-menu').classList.toggle('hidden')">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+        <div id="navbar-menu" class="hidden md:flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 items-center">
+          <a href="#services" class="text-gray-700 hover:text-primary font-semibold py-2">Services</a>
+          <a href="#portfolio" class="text-gray-700 hover:text-primary font-semibold py-2">Portfolio</a>
+          <a href="#about" class="text-gray-700 hover:text-primary font-semibold py-2">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary font-semibold py-2">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+<main>
+<style>
+  #privacy-policy-section {
+    padding-top: 7rem;
+  }
+</style>
+<section id="privacy-policy-section">
+    <h2 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center;">Privacy Policy for Bloomscape Gardens</h2>
+
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1rem;">
+        At Bloomscape Gardens, we are committed to protecting the privacy and security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard the information you provide when using our site. By accessing or using our online platform, you agree to the terms of this Privacy Policy.
+    </p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Information We Collect</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1rem;">
+        We collect various types of information to provide and improve our landscaping and gardening services.
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            <strong>Personal Identification Information:</strong> This includes information such as your name, email address, phone number, and physical address when you contact us for services, request a quote, or subscribe to our newsletter. This information is essential for us to communicate with you and provide our services.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            <strong>Service-Related Information:</strong> Details pertaining to the specific landscaping or gardening services you are interested in or have received, including project details, preferences, and feedback.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            <strong>Technical Data:</strong> When you visit our online platform, we may automatically collect certain information about your device, including your IP address, browser type, operating system, referring URLs, and how you interact with our site. This helps us understand user behavior and improve the functionality and design of our site.
+        </li>
+    </ul>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">How We Use Your Information</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1rem;">
+        The information we collect is used for various purposes, including:
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            To provide, operate, and maintain our landscaping and gardening services, including Floral Design, Garden Maintenance, Plant Installation, Seasonal Planting, and Irrigation Systems.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            To communicate with you, respond to your inquiries, provide customer support, and send you service-related updates.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            To personalize your experience on our site and showcase relevant portfolio items or service offerings.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            To improve our website, services, and operations through analysis of user behavior and preferences.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            To comply with legal obligations and protect our legitimate business interests.
+        </li>
+    </ul>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Sharing Your Information</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1rem;">
+        Bloomscape Gardens does not sell, trade, or otherwise transfer your personally identifiable information to outside parties. We may share your information with trusted third parties who assist us in operating our online platform, conducting our business, or serving you, provided that these parties agree to keep this information confidential and comply with data protection laws. This includes:
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            Service providers who help us manage our website or email communications.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            Analytics providers to understand how our online platform is used.
+        </li>
+    </ul>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1.5rem;">
+        We may also disclose your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety.
+    </p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Data Security</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1.5rem;">
+        We implement a variety of security measures to maintain the safety of your personal information when you submit your details or access your personal information. These measures include secure servers and data encryption where appropriate. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+    </p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Your Data Protection Rights (GDPR)</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1rem;">
+        If you are a resident of the European Economic Area (EEA), you have certain data protection rights, including:
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            The right to access, update or delete the information we have on you.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            The right to rectification.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            The right to object.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            The right of restriction.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            The right to data portability.
+        </li>
+        <li style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.75rem;">
+            The right to withdraw consent.
+        </li>
+    </ul>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1.5rem;">
+        To exercise any of these rights, please contact us. We will respond to your request within a reasonable timeframe.
+    </p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Location of Data Processing</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1.5rem;">
+        Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction. By using our services, you consent to this transfer.
+    </p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Changes to This Privacy Policy</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1.5rem;">
+        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We encourage you to review this Privacy Policy periodically for any changes.
+    </p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Contact Us</h3>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 1rem;">
+        If you have any questions or concerns about this Privacy Policy, please contact us at:
+    </p>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.5rem; font-weight: 600;">Bloomscape Gardens</p>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.5rem;">10601 Avenue D</p>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.5rem;">New York, New York, 11236</p>
+    <p style="font-size: 1rem; line-height: 1.5rem; margin-bottom: 0.5rem;">USA</p>
+</section>
+</main>
+<footer class="footer-bg py-8 compact-section">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-4">
+        <span class="text-3xl font-bold" style="background: linear-gradient(90deg, var(--color-primary-light), var(--color-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Bloomscape Gardens</span>
+      </div>
+      <p class="text-sm text-gray-300 mb-2">Elevating New York landscapes through expert floral design and dedicated garden maintenance.</p>
+      <p class="text-sm text-gray-400 mb-4">© 2024 Bloomscape Gardens. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 text-sm text-gray-400">
+        <a href="./privacy.html" class="hover:text-white">Privacy Policy</a>
+        <a href="./tos.html" class="hover:text-white">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  
+  <div id="cookie-consent-banner" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between shadow-lg z-50">
+    <p class="text-sm mb-2 sm:mb-0 text-center sm:text-left">We use cookies to ensure you get the best experience on our website. By using our site, you agree to our <a href="./privacy.html" class="underline hover:text-primary-light">Privacy Policy</a>.</p>
+    <button id="accept-cookies" class="btn-primary px-4 py-2 text-sm">Accept</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cookieBanner = document.getElementById('cookie-consent-banner');
+      const acceptButton = document.getElementById('accept-cookies');
+      const cookieName = 'consent_Bloomscape Gardens_cookies_accepted'; // Unique cookie name prefix
+
+      // Check if the cookie exists
+      if (localStorage.getItem(cookieName) === 'true') {
+        cookieBanner.classList.add('hidden');
+      } else {
+        cookieBanner.classList.remove('hidden');
+      }
+
+      // Handle accept button click
+      acceptButton.addEventListener('click', function() {
+        localStorage.setItem(cookieName, 'true');
+        cookieBanner.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
